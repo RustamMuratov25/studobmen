@@ -1,0 +1,94 @@
+/* 1. Настройка шрифтов */
+@font-face {
+    font-family: "POLYTECH";
+    src: url("../Шрифты/ALS_Sirius_Regular_0.95.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 2. Базовые стили страницы */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "POLYTECH", sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+    /* Убираем white-space: nowrap, чтобы текст не вылетал за границы */
+}
+
+/* 3. Основной контейнер, который держит всё по центру */
+.main-wrapper {
+    max-width: 1200px; /* Ограничиваем расширение */
+    margin: 0 auto;    /* Центрируем всю страницу */
+    padding: 10px 20px;
+}
+
+/* 4. Шапка */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.tpu_logo img {
+    width: 200px; /* Фиксированный размер для логотипа */
+}
+
+.right {
+    display: flex;
+    gap: 20px;
+}
+
+/* 5. Подзаголовок и поиск */
+.underhead {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет кнопкам перепрыгивать на новую строку при зуме */
+    gap: 15px;
+    padding: 15px 0;
+    border-top: 2px solid #868988;
+    border-bottom: 2px solid #868988;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    border: 2px solid #00ab4e;
+    border-radius: 18px;
+    padding: 5px 10px;
+    flex-grow: 1; /* Поиск заберет свободное место */
+    max-width: 400px;
+}
+
+/* 6. Сетка категорий (Иконки) */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Важно для масштабирования */
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.icon {
+    background-color: #f0ebeb;
+    flex: 1 1 150px; /* Растягиваться, сжиматься, базовый размер 150px */
+    min-height: 100px;
+    border-radius: 18px;
+    border: 3px solid #00ab4e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* 7. Карточка товара */
+.card {
+    background-color: #f0ebeb;
+    width: 280px; /* Фиксированная ширина карточки */
+    border-radius: 18px;
+    border: 3px solid #00ab4e;
+    padding: 15px;
+    box-shadow: 0px 5px 5px grey;
+}

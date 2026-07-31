@@ -1,0 +1,320 @@
+
+@font-face {
+    font-family: "POLYTECH";
+    src: url("Шрифты/ALS_Sirius_Regular_0.95.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+body{
+    font-family: "POLYTECH", sans-serif;
+    font-size:16px;
+    margin: 10px 70px 0px 70px;
+    
+}
+*{
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+}
+
+.main-wrapper {
+    max-width: 1440px; 
+    margin: 0 auto;   
+    padding: 10px 20px;
+    min-width: 720px;
+}
+
+
+
+.content{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 14;
+
+}
+
+.content img{
+    height: 40px;
+    width:25%;
+}
+
+.icon, .card{
+    background-color: #f0ebeb;
+    flex-grow: 1;
+    height:2.5cm;
+    flex-shrink: 0;
+    min-width: 140px;
+    flex-direction: column;
+    align-items: stretch;
+    width: 15%;
+    border-radius: 18px;
+    box-shadow: 0px 5px 5px grey;
+    border:3px #00ab4e solid;
+}
+.icon a{
+    text-decoration: none;
+    color:black;
+}
+
+.row{
+    display: flex;
+
+    justify-content: flex-start; 
+    margin-bottom: 15px;
+    gap: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+#tpu_logo{
+    width:40%;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.right{
+    display: flex;
+
+    gap:30px;
+}
+
+.connection{
+    display: inline-flex;
+    gap:10px;
+}
+.name{
+    margin-top: 5px;
+}
+.underhead{
+
+    display: flex;
+
+    margin:15px 10px 15px 0px;
+    padding:15px;
+    border-width: 2px 0px;
+    border-style:solid;
+    border-color:#868988;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;   
+    flex-shrink: 0;
+    
+}
+
+#main{
+    border-radius: 10px;
+    background:#868988;   
+    padding:5px;
+}
+
+#main:hover img{
+    filter:invert(100%);
+}
+
+#main:hover{
+    background: #00ab4e;
+}
+
+
+a button,.search,[type="submit"]{
+    font-weight: bold;
+    display: inline-flex;
+    padding: 10px auto;
+    text-align: center;
+    align-items: center;
+    border-radius: 18px;
+    background:white;
+    border:#00ab4e solid;
+}
+a button{
+    padding:12px 50px;
+}
+
+.search{
+    width:26%;
+    min-width: 220px;
+    display:inline-flex;
+    padding: 5px 5px 5px 20px;
+    gap:10px;
+}
+.search form{
+    display: inline-flex;
+}
+.search input:last-of-type{
+    color:white;
+    background-color: #00ab4e;
+    padding:5px;
+    margin-left: 50px;
+}
+[type="text"]{
+    margin-left: 10px;
+    width:70%;
+    font-weight: normal;
+    border:none;
+}
+[type="text"]:focus{
+    outline:none;
+}
+.categories{
+    text-align: center;
+}
+#moon{
+    padding: 10px;
+    background-color: #868988;
+    border-radius: 30%;
+}
+
+
+
+.card{
+
+    padding: 10px;
+    height:300px;
+    width: 20%;
+    overflow-y: hidden;
+    min-width: 220px; 
+    flex-shrink: 0; 
+    margin: 15px;
+}
+
+
+.product_image{
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 10px;
+    width:80%;
+    height:65%;
+    border:3px #00ab4e solid;
+    border-radius: 8%;
+}
+
+.card p{
+    clear:left;
+    display: block;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+#adress{
+    border-top:#868988 2px solid;
+}
+#price{
+    font-weight: bold;
+}
+.hearts{
+    display: flex;
+    margin-left:10px;
+    position: relative;
+    width:12%;
+}
+.hearts img{
+    object-fit: cover;
+    position: absolute;
+    width:100%;
+    margin:auto;
+
+}
+#heart_2{
+    opacity: 0;
+}
+
+.hearts:hover #heart_2{
+    opacity: 1;
+}
+.hearts:hover #heart_1{
+    opacity: 0;
+}
+
+.headline{
+    font-weight: 700;
+    font-size: 1.3em;
+    display: flex;
+    padding: 30px 10px;
+    margin-bottom: 20px;
+    border-bottom:#868988 solid 3px;
+    /* padding:20px; */
+}
+.product_name{
+    font-weight: 700;
+    font-size: 36px;
+    display: flex;
+    padding: 30px 10px;
+}
+
+footer{
+    display: block;
+    margin-top:50px; 
+    background-color: #868988;
+    border-radius: 20px;
+    width: 100%;
+    color: white;
+    margin: 0 auto;   
+    padding: 20px 40px;
+    min-width: 720px;
+    max-width: 1440px;
+}
+
+footer > p{
+    margin-bottom:20px;
+}
+
+.social_networks{
+    margin-right:10px;
+}
+a button:hover, .icon:hover{
+    background-color: #00ab4e;
+    color:white;
+    border:3px white solid;
+    
+}
+
+a button:active, .icon:active{
+    background-color: #00ab4e;
+    color:white;
+    border:3px white solid;
+    
+}
+.icon:hover img{
+    filter: invert(100%);
+}
+.icon:hover a{
+    color:white;
+}
+
+#merch:hover img{
+    filter:none;
+}
+.right div{
+    border-radius: 150%;
+}
+
+.card #heart:hover {
+  opacity: 0;
+}
+
+#infinity{
+    font-size: 25px;
+
+}
+.connection{
+    margin-top: 20px;
+}
+
+#moon:hover img{
+    filter: invert(100%);
+
+}
+#moon:hover{
+    background-color: #00ab4e;
+}
+
+
