@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\advertisements_model; // Подключаем вашу модель
+use App\Models\advertisements_model;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
@@ -14,7 +14,6 @@ class mynotices extends Controller
             return redirect()->route('login');
         }
 
-        // Загружаем объявления текущего пользователя вместе с их картинками
         $ads = advertisements_model::where('user_id', Auth::id())
             ->with('images')
             ->get();
